@@ -6,7 +6,7 @@
  || A small project with HTML and CSS for a cyberpunk style landing page.  || <br>
                 --------------------------------------------------------------- <br>
   
-[Clique aqui para acessar](https://luckxsz.github.io/CyberPunk-Login-Page/)
+[Clique aqui para acessar](https://luckxsz.github.io/CyberPunk-Landing-Page/)
 
 PC DESIGN  👇🏻 <br>
 
