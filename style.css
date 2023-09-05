@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(./assets/wallpaper.gif);
+  background-repeat: no-repeat;
+  background-size: auto;
+  font-family: "Orbitron", sans-serif;
+}
+.container {
+  background-color: #ffe606ef;
+  box-shadow: 30px 20px 7px rgba(6, 247, 255, 0.822);
+  margin-top: 18rem;
+  gap: 2px;
+  margin-left: 70%;
+  width: 25vw;
+  height: 30vh;
+  padding-bottom: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15%;
+  border: 3px solid rgb(246, 250, 3);
+}
+img {
+  margin-top: 10px;
+  width: 175px;
+  border-radius: 100%;
+  border: 2px solid rgb(6, 247, 255);
+}
+.login-card {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.inputbox {
+  position: relative;
+  width: 196px;
+}
+.forgot {
+  margin-top: 5px;
+  text-decoration: none;
+  font-weight: bolder;
+}
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: rgb(6, 247, 255);
+}
+
+a:hover {
+  color: red;
+}
+
+a:active {
+  color: blue;
+}
+
+.inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.inputbox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  font-size: 1em;
+  color: #8f8f8f;
+  letter-spacing: 00.05em;
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.inputbox input:valid ~ span,
+.inputbox input:focus ~ span {
+  color: #45f3ff;
+  transform: translateX(-10px) translateY(-34px);
+  font-size: 0, 75em;
+}
+
+.inputbox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #45f3ff;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputbox input:valid ~ i,
+.inputbox input:focus ~ i {
+  height: 44px;
+}
+/* ================================= */
+.inputbox {
+  position: relative;
+  width: 196px;
+}
+
+.inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+.button {
+  position: relative;
+  padding: 12px 24px;
+  border-radius: 8px;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #e40b0b;
+  transition: all 0.2s ease;
+  letter-spacing: 2px;
+  font-weight: bolder;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button:before,
+.button:after {
+  position: absolute;
+  content: "";
+  width: 150%;
+  left: 50%;
+  height: 100%;
+  transform: translateX(-50%);
+  z-index: -1000;
+  background-repeat: no-repeat;
+}
+
+.button:hover:before {
+  top: -70%;
+  background-image: radial-gradient(circle, #00eeff 20%, transparent 20%),
+    radial-gradient(circle, transparent 20%, #00eeff 20%, transparent 30%),
+    radial-gradient(circle, #00eeff 20%, transparent 20%),
+    radial-gradient(circle, #00eeff 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #00eeff 15%, transparent 20%),
+    radial-gradient(circle, #00eeff 20%, transparent 20%),
+    radial-gradient(circle, #00eeff 20%, transparent 20%),
+    radial-gradient(circle, #00eeff 20%, transparent 20%),
+    radial-gradient(circle, #00eeff 20%, transparent 20%);
+  background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%,
+    10% 10%, 18% 18%;
+  background-position: 50% 120%;
+  animation: orangeTopBubbles 0.6s ease;
+}
+
+@keyframes orangeTopBubbles {
+  0% {
+    background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%,
+      40% 90%, 55% 90%, 70% 90%;
+  }
+
+  50% {
+    background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%,
+      50% 50%, 65% 20%, 90% 30%;
+  }
+
+  100% {
+    background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%,
+      50% 40%, 65% 10%, 90% 20%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+.button:hover::after {
+  bottom: -70%;
+  background-image: radial-gradient(circle, #03fa38f3 20%, transparent 20%),
+    radial-gradient(circle, #ec0000 20%, transparent 20%),
+    radial-gradient(circle, transparent 10%, #f3e523 15%, transparent 20%),
+    radial-gradient(circle, #ff4400 20%, transparent 20%),
+    radial-gradient(circle, #00ff95 20%, transparent 20%),
+    radial-gradient(circle, #fc0000 20%, transparent 20%),
+    radial-gradient(circle, #01ffc0 20%, transparent 20%);
+  background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 20% 20%, 18% 18%;
+  background-position: 50% 0%;
+  animation: orangeBottomBubbles 0.6s ease;
+}
+
+@keyframes orangeBottomBubbles {
+  0% {
+    background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%,
+      70% -10%, 70% 0%;
+  }
+
+  50% {
+    background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%,
+      105% 0%;
+  }
+
+  100% {
+    background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
+      110% 10%;
+    background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+
+/* RESPONSIVITY CODES */
+@media only screen and (max-width: 900px) {
+  .container {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    border: 3px solid #f80000;
+    margin: auto;
+    margin-top: 15rem;
+    width: 45vw;
+    height: 35vh;
+    box-shadow: 10px 10px 10px #f30202d3;
+  }
+  .inputbox {
+    width: 13rem;
+  }
+  img {
+    width: 170px;
+    border-radius: 90%;
+    border: 2px solid #ff0000;
+  }
+  .button {
+    position: relative;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    background-color: #ff0000;
+    transition: all 0.2s ease;
+  }
+  .forgot > a {
+    text-decoration: none;
+    color: red;
+  }
+}
